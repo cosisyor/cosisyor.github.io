@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <div style="display:none">
+  </div>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="applicable-device" content="mobile">
+  <title>BoomLive</title>
+  <meta property="og:title" content="BoomLive - Chơi game, kết bạn, xem livestream miễn phí">
+  <meta property="og:description"
+    content="567Live - Chơi game, kết bạn, xem livestream miễn phí,Cho bạn tận hưởng cảm giác sung sướng với trứng rung điều khiển mỏ neo,Chương trình phát sóng trực tiếp tương tác mạnh nhất tại đây 567Live.">
+  <!-- <meta property="og:image" content="https://567live111.oss-cn-hongkong.aliyuncs.com/567logo.png">
+  <link rel="icon" href="https://567live111.oss-cn-hongkong.aliyuncs.com/567logo.png" sizes="32x32"> -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/crypto-js.min.js"></script>
+  <link href="static/css/m.css" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+    }
+
+    .code {
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff url('static/image/pc_banner2.jpg') no-repeat center center;
+      background-size: 100%;
+      z-index: 1000;
+    }
+
+    #qrcode {
+      box-sizing: border-box;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      margin: -100px 0 0 -100px;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    #qrcode canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    #qrcode img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 75px;
+      left: 75px;
+    }
+  </style>
+
+
+  <!-- tiktok pixel -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+      ttq.load('C64C0PH08UUUD8L6KFE0');
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <img src="static/picture/boomlive.png" class="appLogo" alt="">
+    <a class="down an"></a>
+  </header>
+  <!-- <section style="padding-top:1.173333rem">
+<a href="javascript:;">
+<img src="static/picture/kefu.png" style="width: 100%;"></a>
+</section> -->
+  <section class="hot" style="padding-top:3px;">
+    <div class="titH">IDOL LIVE</div>
+    <ul>
+      <li>
+        <a class="down an">
+          <img src="static/picture/a.jpg">
+          <span class="state">online</span>
+          <div class="des">
+            <p class="name">Dii Nè</p>
+            <p>👁<span>12601</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/b.jpg">
+          <span class="state">online</span>
+          <div class="des">
+            <p class="name">Gái xinh</p>
+            <p>👁<span>12601</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/c.jpg">
+          <span class="state">online</span>
+          <div class="des">
+            <p class="name">Hot girl</p>
+            <p>👁<span>32221</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/d.jpg">
+          <span class="state">online</span>
+          <div class="des">
+            <p class="name">Diệu Ly - F</p>
+            <p>👁<span>5436</span></p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/e.jpg">
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/f.jpg">
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/g.jpg">
+        </a>
+      </li>
+      <li>
+        <a class="down an">
+          <img src="static/picture/h.jpg">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!--
+<section class="code">
+<p id="qrcode">
+<img src="picture/logo.png" alt="">
+</p>
+</section>
+http://api.567apij.com/api/customerChat/zgfi4jccath1jsl2i06ukbi5fosoib2o?Locale=vi-VN
+-->
+
+  <section class="more" style="margin-bottom: 3.7rem;">
+    <a class="down an"><img src="static/picture/footer.jpg" style="width: 100%;"></a>
+  </section>
+
+  <style>
+    #yszc {
+      margin-bottom: 0.7rem;
+      padding: 0px 10px;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    #yszc p {
+      font-size: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    #aqtk {
+      margin-bottom: 3.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #aqtk p {
+      font-weight: 900;
+      font-size: 0.7rem;
+    }
+
+    #aqtk a {
+      text-align: left;
+    }
+  </style>
+
+  <div id="yszc">
+    <img src="./static/picture/boomlive.png" width="100px">
+    <p>BoomLive là một nền tảng mạng xã hội phát video trực tuyến trên toàn cầu, nơi người dùng phát trực tuyến những
+      khoảnh khắc cuộc sống, cập nhật về các xu hướng sống đang thịnh hành.</p>
+  </div>
+
+  <div id="aqtk">
+    <p>Thông tin</p>
+    <a href="/index11.html">Điều khoản sử dụng</a>
+    <a href="/index12.html">Chính sách bảo mật thanh toán</a>
+    <a href="/index13.html">Chính sách bảo mật thông tin cá nhân</a>
+  </div>
+
+  <footer>
+    <img src="static/picture/boomlive.png" class="appLogo"> BoomLive
+    <a class="an down" onclick="getUrl()">DOWNLOAD</a>
+  </footer>
+  <script src="static/js/flexible.js"></script>
+  <script src="static/js/jquery.qrcode.js"></script>
+  <!-- <script src="static/js/lvins.js"></script> -->
+
+  <script type="text/javascript">
+    var sys = "win";
+    var isinsOk = false;
+    $(function () {
+      var u = navigator.userAgent;
+      var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios
+      if (isAndroid) { //Androi
+        $('.code').hide();
+        sys = "and";
+      } else if (isiOS) { // ios
+        $('.code').hide();
+        sys = "ios";
+      } else {
+        $('.code').show();
+        sys = "win";
+      }
+
+      test();
+
+    });
+
+    // $(".down").click(function () {
+    //   if (isinsOk) {
+    //     LvIns.download();
+    //   } else {
+    //     window.location.href = 'http://567g.live/';
+    //   }
+    // });
+
+    var url = window.location.href;
+    $("#qrcode").qrcode(url);
+
+    function test() {
+      var payload = {
+        t1: "t1",
+        t2: "t2"
+      };
+      var config = {
+        appid: '567live',
+        payload: JSON.stringify(payload)
+      };
+
+      // LvIns.init(config, function (data) {
+      //   //console.log(data);
+      //   isinsOk = true;
+      //   //LvIns.wakeup();
+      //   $(".down").show();
+      // });
+    }
+
+
+    function getUrl() {
+      window.open('https://play.google.com/store/apps/details?id=com.aokfunlive.boomlive')
+    }
+  </script>
+</body>
+
+</html>
